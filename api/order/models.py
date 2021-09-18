@@ -11,6 +11,10 @@ class Order(models.Model):
     total_products = models.CharField(max_length=50, default=0)
     transaction_id = models.CharField(max_length=150, default=0)
     total_amount = models.CharField(max_length=50, default=0)
+    email = models.CharField(max_length=150, default=0)
 
+    address = models.CharField(max_length=500, default="")
+    phone = models.CharField(max_length=20, default="")
+    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

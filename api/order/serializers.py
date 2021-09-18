@@ -12,5 +12,8 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
             'product_names',
             'total_products',
             'transaction_id',
-            'total_amount'
+            'total_amount',
+            'address',
+            'phone',
+            'email'
         )
